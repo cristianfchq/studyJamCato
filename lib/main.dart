@@ -26,17 +26,54 @@ class MyApp extends StatelessWidget {
             "Mi primera applicacion",
           ),
         ),
-        body: Container(
-          width: 200.0,
-          height: 200.0,
-          color: Colors.blue,
-          //magen
-          margin: EdgeInsets.only(top: 50.0,left: 35.0),
-          //margin: EdgeInsets.all(20.0),
-          child: Center(
-            child: Text("Hola mundo"),
-          ),
+        body:Column(
+          children: <Widget>[
+            Container(
+              width: 200.0,
+              height: 200.0,
+              color: Colors.blue,
+              //magen
+              margin: EdgeInsets.only(top: 50.0,left: 35.0),
+              //margin: EdgeInsets.all(20.0),
+              child: Center(
+                child: Text("Hola mundo"),
+              ),
+            ),
+            Container(
+              width: 200.0,
+              height: 100.0,
+              color: Colors.red,
+              //magen
+              margin: EdgeInsets.only(top: 50.0),
+              //margin: EdgeInsets.all(20.0),
+              child: Center(
+                child: Text("Hola mundo"),
+              ),
+            ),
+            Row(
+              children: <Widget>[
+                Container(
+                  width: 50.0,
+                  height: 50.0,
+                  color: Colors.orange,
+                ),
+                Container(
+                  width: 50.0,
+                  height: 50.0,
+                  color: Colors.green,
+                ),
+                Container(
+                  width: 50.0,
+                  height: 50.0,
+                  color: Colors.grey,
+                ),
+              ],
+            ),
+          ],
         ),
+
+
+
         //Row(
         //  mainAxisAlignment: MainAxisAlignment.spaceAround,
         //  children: <Widget>[
