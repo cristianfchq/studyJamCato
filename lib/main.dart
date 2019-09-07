@@ -31,8 +31,11 @@ class MyApp extends StatelessWidget {
           height: 200.0,
           color: Colors.blue,
           //magen
-          //margin: EdgeInsets.only(top: 50.0,left: 35.0),
-          margin: EdgeInsets.all(20.0),
+          margin: EdgeInsets.only(top: 50.0,left: 35.0),
+          //margin: EdgeInsets.all(20.0),
+          child: Center(
+            child: Text("Hola mundo"),
+          ),
         ),
         //Row(
         //  mainAxisAlignment: MainAxisAlignment.spaceAround,
