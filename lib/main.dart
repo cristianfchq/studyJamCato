@@ -118,7 +118,8 @@ class MyApp extends StatelessWidget {
                   image: AssetImage('assets/images/50F.jpg'),
                 ),
                 Image(
-                  image: NetworkImage('https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369-810x540.jpg'),
+                  image: NetworkImage(
+                      'https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369-810x540.jpg'),
                 ),
                 //
                 Icon(
@@ -128,10 +129,21 @@ class MyApp extends StatelessWidget {
                 Container(
                   width: 200.0,
                   height: 100.0,
-                  color: Colors.red,
+                  //color: Colors.red,
                   //magen
                   margin: EdgeInsets.only(top: 50.0),
                   //margin: EdgeInsets.all(20.0),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.green,
+                      width: 10.0,
+                    ),
+                    color: Colors.red,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(15),
+                      topRight: Radius.circular(15),
+                    ),
+                  ),
                   child: Center(
                     child: Text("Hola mundo"),
                   ),

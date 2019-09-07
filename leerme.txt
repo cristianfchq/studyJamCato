@@ -1,0 +1,48 @@
+material design
+
+
+scafol
+
+appbar
+body
+bootonnavigationview
+botones flotantes floatingboton
+drawer
+
+
+witget: se divide en widget simples y witget group
+
+
+
+witget group
+
+Column:almacena un conjuto de widget
+en fila
+__
+__
+__
+__
+
+	main	de arriba hacia abajo
+	cross	de isquierda a derecha
+
+
+
+row
+en forma de |||||
+
+
+	cross	de arriba hacia abajo
+	main	de isquierda a derecha
+
+stack
+de forma desordenada de pila
+
+
+
+
+
+witget simples : solo acepta un widget
+
+container
+center
