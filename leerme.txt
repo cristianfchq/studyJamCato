@@ -46,3 +46,6 @@ witget simples : solo acepta un widget
 
 container
 center
+
+
+imagedecoration en un contenedor
