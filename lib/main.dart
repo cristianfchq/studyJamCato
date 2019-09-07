@@ -3,6 +3,18 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+
+  Widget textoPrincipal(String text){
+    return Text(
+      text,
+      style: TextStyle(
+        color: Colors.white,
+        fontSize: 20.0,
+        fontWeight: FontWeight.w500,
+      ),
+    );
+  }
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -30,16 +42,28 @@ class MyApp extends StatelessWidget {
           children: <Widget>[
             Container(
               //width: 200.0,
-              height: 20.0,
+              height: 60.0,
               //color Color(0xFF388E3C),
               color: Colors.blue,
               //magen
               //margin: EdgeInsets.only(top: 50.0,left: 35.0),
               //margin: EdgeInsets.all(20.0),
-              child: Center(
-                child: Text("Hola mundo"),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  //scrollDirection: Axis.horizontal,
+
+                  children: <Widget>[
+                    textoPrincipal("uno"),
+                    textoPrincipal("dos"),
+                    textoPrincipal("tres"),
+                    textoPrincipal("cuatro"),
+                    textoPrincipal("cinco"),
+                    textoPrincipal("seis"),
+
+                  ],
+                ),
               ),
-            ),
+
             Container(
               width: 200.0,
               height: 100.0,
