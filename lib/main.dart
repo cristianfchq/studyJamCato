@@ -29,11 +29,12 @@ class MyApp extends StatelessWidget {
         body:Column(
           children: <Widget>[
             Container(
-              width: 200.0,
-              height: 200.0,
+              //width: 200.0,
+              height: 20.0,
+              //color Color(0xFF388E3C),
               color: Colors.blue,
               //magen
-              margin: EdgeInsets.only(top: 50.0,left: 35.0),
+              //margin: EdgeInsets.only(top: 50.0,left: 35.0),
               //margin: EdgeInsets.all(20.0),
               child: Center(
                 child: Text("Hola mundo"),
