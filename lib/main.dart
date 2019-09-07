@@ -50,25 +50,31 @@ class MyApp extends StatelessWidget {
                 child: Text("Hola mundo"),
               ),
             ),
-            Row(
-              children: <Widget>[
-                Container(
-                  width: 50.0,
-                  height: 50.0,
-                  color: Colors.orange,
-                ),
-                Container(
-                  width: 50.0,
-                  height: 50.0,
-                  color: Colors.green,
-                ),
-                Container(
-                  width: 50.0,
-                  height: 50.0,
-                  color: Colors.grey,
-                ),
-              ],
+
+            Container(
+              margin: EdgeInsets.only(top: 30.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Container(
+                    width: 50.0,
+                    height: 50.0,
+                    color: Colors.orange,
+                  ),
+                  Container(
+                    width: 50.0,
+                    height: 50.0,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    width: 50.0,
+                    height: 50.0,
+                    color: Colors.grey,
+                  ),
+                ],
+              ),
             ),
+
           ],
         ),
 
