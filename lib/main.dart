@@ -15,6 +15,40 @@ class MyApp extends StatelessWidget {
     );
   }
 
+  Widget componenteUno(String name){
+    return Column(
+      children: <Widget>[
+        Icon(
+          Icons.gps_fixed,
+          color: Color(0xFF388E3C),
+        ),
+        Text(
+          name,
+          style: TextStyle(
+            color: Colors.green,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget componenteDos(String name){
+    return Column(
+      children: <Widget>[
+        Icon(
+          Icons.gps_fixed,
+          color: Colors.black45,
+        ),
+        Text(
+          name,
+          style: TextStyle(
+            color: Colors.black45,
+          ),
+        ),
+      ],
+    );
+  }
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -30,7 +64,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: Scaffold(
         appBar: AppBar(
@@ -43,8 +77,8 @@ class MyApp extends StatelessWidget {
             Container(
               //width: 200.0,
               height: 60.0,
-              //color Color(0xFF388E3C),
-              color: Colors.blue,
+              color: Color(0xFF388E3C),
+              //color: Colors.lightGreen,
               //magen
               //margin: EdgeInsets.only(top: 50.0,left: 35.0),
               //margin: EdgeInsets.all(20.0),
@@ -63,7 +97,28 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
+            //Icon(
+            //  Icons.audiotrack,
+            //  color: Colors.green,
+            //),
+            Container(
+              //height: 60.0,
+              margin: EdgeInsets.all(10.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                //scrollDirection: Axis.horizontal,
 
+                children: <Widget>[
+                  componenteUno("uno"),
+                  componenteDos("dos"),
+                  componenteDos("tres"),
+                  componenteDos("cuatro"),
+                  componenteDos("cinco"),
+                  componenteDos("seis"),
+
+                ],
+              ),
+            ),
             Container(
               width: 200.0,
               height: 100.0,
