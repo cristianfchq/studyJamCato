@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-
-  Widget textoPrincipal(String text){
+  Widget textoPrincipal(String text) {
     return Text(
       text,
       style: TextStyle(
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
     );
   }
 
-  Widget componenteUno(String name){
+  Widget componenteUno(String name) {
     return Column(
       children: <Widget>[
         Icon(
@@ -32,7 +31,7 @@ class MyApp extends StatelessWidget {
     );
   }
 
-  Widget componenteDos(String name){
+  Widget componenteDos(String name) {
     return Column(
       children: <Widget>[
         Icon(
@@ -72,93 +71,98 @@ class MyApp extends StatelessWidget {
             "Mi primera applicacion",
           ),
         ),
-        body:Column(
+        body: ListView(
           children: <Widget>[
-            Container(
-              //width: 200.0,
-              height: 60.0,
-              color: Color(0xFF388E3C),
-              //color: Colors.lightGreen,
-              //magen
-              //margin: EdgeInsets.only(top: 50.0,left: 35.0),
-              //margin: EdgeInsets.all(20.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  //scrollDirection: Axis.horizontal,
+            Column(
+              children: <Widget>[
+                Container(
+                  //width: 200.0,
+                  height: 60.0,
+                  color: Color(0xFF388E3C),
+                  //color: Colors.lightGreen,
+                  //magen
+                  //margin: EdgeInsets.only(top: 50.0,left: 35.0),
+                  //margin: EdgeInsets.all(20.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    //scrollDirection: Axis.horizontal,
 
-                  children: <Widget>[
-                    textoPrincipal("uno"),
-                    textoPrincipal("dos"),
-                    textoPrincipal("tres"),
-                    textoPrincipal("cuatro"),
-                    textoPrincipal("cinco"),
-                    textoPrincipal("seis"),
-
-                  ],
+                    children: <Widget>[
+                      textoPrincipal("uno"),
+                      textoPrincipal("dos"),
+                      textoPrincipal("tres"),
+                      textoPrincipal("cuatro"),
+                      textoPrincipal("cinco"),
+                      textoPrincipal("seis"),
+                    ],
+                  ),
                 ),
-              ),
-            //Icon(
-            //  Icons.audiotrack,
-            //  color: Colors.green,
-            //),
-            Container(
-              //height: 60.0,
-              margin: EdgeInsets.all(10.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                //scrollDirection: Axis.horizontal,
+                Container(
+                  //height: 60.0,
+                  margin: EdgeInsets.all(10.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    //scrollDirection: Axis.horizontal,
 
-                children: <Widget>[
-                  componenteUno("uno"),
-                  componenteDos("dos"),
-                  componenteDos("tres"),
-                  componenteDos("cuatro"),
-                  componenteDos("cinco"),
-                  componenteDos("seis"),
-
-                ],
-              ),
-            ),
-            Container(
-              width: 200.0,
-              height: 100.0,
-              color: Colors.red,
-              //magen
-              margin: EdgeInsets.only(top: 50.0),
-              //margin: EdgeInsets.all(20.0),
-              child: Center(
-                child: Text("Hola mundo"),
-              ),
-            ),
-
-            Container(
-              margin: EdgeInsets.only(top: 30.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: <Widget>[
-                  Container(
-                    width: 50.0,
-                    height: 50.0,
-                    color: Colors.orange,
+                    children: <Widget>[
+                      componenteUno("uno"),
+                      componenteDos("dos"),
+                      componenteDos("tres"),
+                      componenteDos("cuatro"),
+                      componenteDos("cinco"),
+                      componenteDos("seis"),
+                    ],
                   ),
-                  Container(
-                    width: 50.0,
-                    height: 50.0,
-                    color: Colors.green,
+                ),
+                Image(
+                  image: AssetImage('assets/images/50F.jpg'),
+                ),
+                Image(
+                  image: NetworkImage('https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369-810x540.jpg'),
+                ),
+                //
+                Icon(
+                  Icons.audiotrack,
+                  color: Colors.green,
+                ),
+                Container(
+                  width: 200.0,
+                  height: 100.0,
+                  color: Colors.red,
+                  //magen
+                  margin: EdgeInsets.only(top: 50.0),
+                  //margin: EdgeInsets.all(20.0),
+                  child: Center(
+                    child: Text("Hola mundo"),
                   ),
-                  Container(
-                    width: 50.0,
-                    height: 50.0,
-                    color: Colors.grey,
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: 30.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
+                      Container(
+                        width: 50.0,
+                        height: 50.0,
+                        color: Colors.orange,
+                      ),
+                      Container(
+                        width: 50.0,
+                        height: 50.0,
+                        color: Colors.green,
+                      ),
+                      Container(
+                        width: 50.0,
+                        height: 50.0,
+                        color: Colors.grey,
+                      ),
+                    ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-
           ],
         ),
-
-
 
         //Row(
         //  mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -166,9 +170,9 @@ class MyApp extends StatelessWidget {
         //    Text("uno"),
         //    Text("dos"),
         //    Text("tres"),
-         // ],
+        // ],
         //),
-      ),//MyHomePage(title: 'Flutter Demo Home Page'),
+      ), //MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
